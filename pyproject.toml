@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tagger"
+version = "0.1.0"
+description = ""
+authors = ["Nikolas Schriefer <info@nikolasschriefer.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+boto3 = "^1.29"
+openai = "^1.2"
+pillow = "^10.1"
+streamlit = "^1.28"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
