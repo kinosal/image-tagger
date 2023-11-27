@@ -26,7 +26,7 @@ def hash_and_scale_image(mode: str, image_name: str = None, image_file=None):
         image.save(f"images/{hashed_name}")
 
     image_stream = io.BytesIO()
-    image.save(image_stream, format="JPEG")
+    image.save(image_stream, format=suffix)
     return image_stream.getvalue(), hashed_name
 
 
